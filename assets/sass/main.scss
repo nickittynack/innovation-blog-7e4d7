@@ -1,7 +1,7 @@
 // Font.
 $font: (
   primary: ("Roboto", sans-serif),
-  secondary: ("PT Serif", serif)
+  secondary: ("Roboto", sans-serif)
 );
 
 // Palette.
@@ -33,3 +33,49 @@ $palette: (
 @import "imports/subscribe";
 @import "imports/footer";
 @import "imports/palettes";
+
+.site-header {
+  background: #008850;
+  border: 0;
+}
+
+.menu {
+  .menu-item {
+    color: white;
+    a {
+      text-transform: none;
+    }
+  }
+}
+
+.intro {
+  background: #008850;
+  width: 100vw;
+  text-align: center;
+  padding: 9vh 0;
+  position: relative;
+
+  .intro-text-box {
+    text-align: left;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    
+    letter-spacing: 0em;
+    position: absolute;
+    left: 30%;
+    width: 20vw;
+  }
+
+  .intro-title-1 {
+    font-size: 2.5em;
+    line-height: 64px;
+    border-bottom: 4px solid #00A963;
+  }
+
+  .intro-title-2 {
+    font-size: 1.8em;
+    line-height: 1.3em;
+  }
+}
+

@@ -1,24 +1,14 @@
-{{ define "content" }}
-
-  {{ if .Params.has_intro }}
+{{ define "hero" }}
   <div class="intro">
-    <div class="inner-md">
-      {{ if $.Params.intro_content }}
-      <div class="intro-text">
-        {{ partial "markdownify-block" $.Params.intro_content }}
-      </div>
-      {{ end }}
-      {{ if $.Params.intro_actions }}
-      <div class="intro-cta">
-        {{ range $action := $.Params.intro_actions }}
-        <a href="{{ $action.url | relURL }}" class="{{ if or (eq $action.style "primary") (eq $action.style "secondary") }}button{{ end }}{{ if eq $action.style "secondary" }} button-secondary{{ end }}" {{ if $action.new_window }}target="_blank" rel="noopener"{{ end }}>{{ $action.label }}</a>
-        {{ end }}
-      </div>
-      {{ end }}
+    <div class="intro-text-box">
+      <div class="intro-title-1">Designing better care</div>
+      <div class="intro-title-2">Shaping innovation together</div>
     </div>
+    <img src="assets/svg/blocks.svg" alt="Blocks" /></a>
   </div><!-- .intro -->
-  {{ end }}
+{{ end }}
 
+{{ define "content" }}
   <div class="post-feed">
     {{ $display_posts := ((.Site.GetPage "section" "/posts").Pages).ByDate.Reverse }}
     {{ range $post := $display_posts }}

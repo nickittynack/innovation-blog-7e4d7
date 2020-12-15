@@ -1,22 +1,19 @@
-title: Stackbit Ampersand Theme
+title: Innovation Team
 baseURL: /
 params:
-  description: Medium inspired blogging theme for Stackbit
+  description: TBD
   layout_style: grid
   palette: green
   header:
-    title: Ampersand
-    logo_img: images/logo.png
+    title: Innovation
+    logo_img: assets/svg/innovation.svg
     has_nav: true
     nav_links:
       - label: Home
         url: /
         style: link
-      - label: About
+      - label: Team
         url: /about
-        style: link
-      - label: Style Guide
-        url: /style-guide
         style: link
       - label: Contact
         url: /contact
@@ -28,7 +25,7 @@ params:
         url: 'https://www.stackbit.com'
         style: link
         new_window: true
-    has_social: true
+    has_social: false
     social_links:
       - label: Twitter
         url: 'https://twitter.com/'

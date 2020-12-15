@@ -20,6 +20,8 @@
         <div id="page" class="site layout-{{ .Site.Params.layout_style }} palette-{{ .Site.Params.palette }}">
         
             {{ partial "header.html" . }}
+
+            {{ block "hero" . }}{{ end }}
         
             <div id="content" class="site-content outer">
               <main id="main" class="site-main inner">
